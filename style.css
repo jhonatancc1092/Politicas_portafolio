@@ -1,12 +1,25 @@
-body
-{
+/* Ajustes generales */
+body {
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
+    font-size: 16px;
 }
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+    }
+    .caja, .caja1, .caja2 {
+        width: 30%;
+    }
+}
+
 .decreto{
     width: 100%;
     position: relative;
@@ -261,4 +274,58 @@ a{
 a:hover{
     color: rgb(34, 34, 34);
     text-decoration: underline black;
+}
+@media (max-width: 480px) {
+    .decreto {
+        font-size: 35px;
+    }
+    .decreto::after{
+        top: 55px;
+        width: 50px;
+    }
+    .decreto::before{
+        top: 55px;
+        width: 70px;
+    }
+    .titulo1 {
+        font-size: 18px;
+    }
+    
+    .contenedor {
+        flex-direction: column;
+        height: 100%;
+    }
+    .caja{
+        width: 68%;
+        height: 70%;
+    }
+    .titulo2::after{
+        display: none;
+    }
+    .titulo2::before{
+        display: none;
+    }
+    
+    .caja1{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .caja2{
+        width: 93%;
+        margin-top: 20px;
+    }
+
+    .componente {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .componente.expandida {
+        width: 100%;
+        height: auto;
+    }
+
+    .pcomponente1, .pcomponente2 {
+        font-size: 14px;
+    }
 }
