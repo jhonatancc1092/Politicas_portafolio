@@ -7,6 +7,8 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Estilos para pantallas grandes */
@@ -118,11 +120,13 @@ body {
     border: solid black 2px;
     padding: 60px;
     height: 60vh;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .componente{
     cursor: pointer;
-    width: 300px;
-    height: 190px;
+    width: 280px;
+    height: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,8 +134,8 @@ body {
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     transition: all 0.6s ease;
     flex-direction: column;
 }
@@ -173,11 +177,12 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 79vh;
+    min-height: 79vh;
+    clear: both;
 }
 i{
-    font-size: 80px;
-    margin: 30px;
+    font-size: 46px;
+    margin: 10px;
     color: rgb(0, 0, 0);
 }
 span{
@@ -257,6 +262,13 @@ td{
     margin-left: 60px;
     font-size: 18px;
 }
+.pcomponente3{
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: justify;
+    margin-right: 60px;
+    margin-left: 60px;
+    font-size: 14px;
+}
 .referencias{
     margin: 0;
     font-family: "Satisfy", cursive;
@@ -274,6 +286,16 @@ a{
 a:hover{
     color: rgb(34, 34, 34);
     text-decoration: underline black;
+
+}
+
+.contenedor3{
+    clear: both;
+    margin: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 79vh;
 }
 @media (max-width: 480px) {
     .decreto {
